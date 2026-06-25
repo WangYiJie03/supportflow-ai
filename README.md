@@ -1,4 +1,4 @@
-这个readme好还是你上面给的好：SupportFlow AI
+SupportFlow AI
 SupportFlow AI is an AI-powered customer support agent for SaaS and education companies.
 It helps support teams answer repetitive customer questions using company knowledge base documents, while escalating uncertain questions to human support.
 Problem
