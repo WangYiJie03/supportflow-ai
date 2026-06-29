@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.routers import analytics, documents, tickets
+from app.routers import analytics, documents, tickets, upload
 
 app = FastAPI(title="SupportFlow AI API")
 
@@ -19,7 +19,7 @@ app.add_middleware(
 app.include_router(documents.router, prefix="/api")
 app.include_router(tickets.router, prefix="/api")
 app.include_router(analytics.router, prefix="/api")
-
+app.include_router(upload.router, prefix="/api")
 
 @app.get("/")
 def root():
